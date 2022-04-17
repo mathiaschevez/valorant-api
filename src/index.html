@@ -1,20 +1,54 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
   <meta charset="utf-8">
-  <title>Project Starter</title>
   <meta name="viewport" content="width=device-width, initial-scale=1">
-
-  <!-- 
-    Don't add stylesheets/main.css or javascripts/main.js manually. 
-    They will be added automatically by Webpack.
-  -->
 </head>
-
-<body>
-  <!-- Your HTML goes here -->
-  <h1>Welcome to CS 2350!</h1>
-
+<body class="bg-dark">
+  <nav class="navbar fixed-top navbar-dark bg-dark px-4 border-bottom border-danger">
+    <a class="navbar-brand d-flex flex-row gap-3" href="#">
+      <img src="https://seeklogo.com/images/V/valorant-logo-FAB2CA0E55-seeklogo.com.png" width="30" height="30" class="d-inline-block align-top" alt="">
+      VALORANT
+    </a>
+  </nav>
+  <div class="header mb-3">
+    <img class="img-fluid" src='https://images.contentstack.io/v3/assets/bltb6530b271fddd0b1/bltc04e4637524166dc/621853fd6be1e66143a66db2/022822_TakeoverCap_Banner.jpg' alt="valorant">
+  </div>
+  <div class="categories container mb-5">
+    <h1 class="text-light my-3">FEATURED CATEGORIES</h1>
+    <div class="category-list d-flex flex-column gap-3 flex-md-row">
+      <a class="text-decoration-none text-light border px-3 py-3 align-middle" href="./agents.html">
+        <div class="agents d-flex flex-md-column justify-content-between align-items-center">
+          <h1 class="">AGENTS</h1>
+          <img class="w-50 h-auto d-sm-none" src="https://playvalorant.com/static/agents-group-539f9e91c0ca94a88baafa239808180b.png" alt="agents">
+          <img class="w-75 d-none d-sm-block h-auto" src="https://playvalorant.com/static/agents-group-539f9e91c0ca94a88baafa239808180b.png" alt="agents">
+        </div>
+      </a>
+      <a class="text-decoration-none text-light border px-3 py-3" href="./weapons.html">
+        <div class="agents d-flex flex-md-column justify-content-between align-items-center">
+          <h1 class="">WEAPONS</h1>
+          <img class="rotate w-50 h-auto d-sm-none" src="./images/weapons.png" alt="weapons">
+          <img class="rotate d-none d-sm-block w-75 h-auto" src="./images/weapons.png" alt="weapons">
+        </div>
+      </a>
+      <a class="text-decoration-none text-light border px-3 py-3" href="./ranks.html">
+        <div class="agents d-flex flex-md-column justify-content-between align-items-center">
+          <h1 class="">RANKS</h1>
+          <img class="rotate w-50 h-auto d-sm-none" src="./images/ranks.png" alt="agents">
+          <img class="rotate d-none d-sm-block w-75 h-auto" src="./images/ranks.png" alt="agents">
+        </div>
+      </a>
+      <a class="text-decoration-none text-light border px-3 py-3" href="./maps.html">
+        <div class="agents d-flex flex-md-column justify-content-between align-items-center">
+          <h1 class="">MAPS</h1>
+          <img class="w-50 h-auto d-sm-none" src="https://images.squarespace-cdn.com/content/v1/59af2189c534a58c97bd63b3/1594990774225-FRPDCJBG2N6I1LNOSZO1/Bind+map+callouts+Valorant.png" alt="agents">
+          <img class="d-none d-sm-block w-75 h-auto" src="https://images.squarespace-cdn.com/content/v1/59af2189c534a58c97bd63b3/1594990774225-FRPDCJBG2N6I1LNOSZO1/Bind+map+callouts+Valorant.png" alt="agents">
+        </div>
+      </a>
+    </div>
+  </div>
+  <footer class="bg-dark border-top border-danger py-4">
+    <p class="text-light text-center">2022 &copy; VALORANT API PROJECT</p>
+  </footer>
 </body>
 </html>
