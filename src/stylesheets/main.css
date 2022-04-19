@@ -6,4 +6,5 @@
 .rotate {
   transform: rotate(30deg)
 }
+
 @import "~bootstrap/dist/css/bootstrap.min.css";

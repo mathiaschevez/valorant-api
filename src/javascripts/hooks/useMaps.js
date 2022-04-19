@@ -8,12 +8,12 @@ export function getMaps() {
     for (let map of maps) {
       let cell = document.createElement('div')
       cell.innerHTML = `
-        <a href="/" class='text-decoration-none'>
+        <div class='text-decoration-none'>
           <div class='border p-2 d-flex justify-content-between align-items-center'>
             <h1 class='text-light'>${map.displayName}</h1>
             <img class='w-50 h-auto' src=${map.splash} alt='agent'/>
           </div>
-        </a>
+        </div>
       `
       document.querySelector('#mapList').appendChild(cell)
     }

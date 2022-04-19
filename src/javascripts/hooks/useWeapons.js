@@ -8,12 +8,12 @@ export function getWeapons() {
     for (let weapon of weapons) {
       let cell = document.createElement('div')
       cell.innerHTML = `
-        <a href="/" class='text-decoration-none'>
+        <div class='text-decoration-none'>
           <div class='border p-2'>
             <img class='img-fluid' src=${weapon.displayIcon} alt='agent'/>
             <h1 class='text-light text-center'>${weapon.displayName}</h1>
           </div>
-        </a>
+        </div>
       `
       document.querySelector('#weaponList').appendChild(cell)
     }

@@ -9,12 +9,12 @@ export function getRanks() {
       if (rank.tier > 2) {
         let cell = document.createElement('div')
         cell.innerHTML = `
-          <a href="/" class='text-decoration-none'>
+          <div class='text-decoration-none'>
             <div class='border p-2 d-flex justify-content-between align-items-center'>
               <h1 class='text-light'>${rank.tierName}</h1>
               <img class='img-fluid' src=${rank.smallIcon} alt='agent'/>
             </div>
-          </a>
+          </div>
         `
           document.querySelector('#rankList').appendChild(cell)
         }

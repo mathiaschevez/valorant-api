@@ -8,12 +8,12 @@ export function getAgents() {
     for (let agent of agents) {
       let cell = document.createElement('div')
       cell.innerHTML = `
-        <a href="/" class='text-decoration-none'>
-          <div class='border'>
+        <div class='text-decoration-none'>
+          <div class='border my-3 '>
             <img class='img-fluid' src=${agent.fullPortraitV2} alt='agent'/>
             <h1 class='text-light text-center'>${agent.displayName}</h1>
           </div>
-        </a>
+        </div>
       `
       document.querySelector('#agentList').appendChild(cell)
     }
